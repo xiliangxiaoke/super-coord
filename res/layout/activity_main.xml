@@ -7,6 +7,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="club.xiaoke.supercood.MainActivity" >
+    
+    
+    <TextView android:id="@+id/mainactivity_coord_type_tip"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="@string/ac_main_tip"
+        android:textColor="#fff" />
 
     
     
@@ -53,10 +61,6 @@
             />
     </LinearLayout>
     
-    <TextView android:id="@+id/mainactivity_coord_type_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/mainactivity_coord_type_panel"
-        android:text="@string/ac_main_tip" />
+    
 
 </RelativeLayout>
