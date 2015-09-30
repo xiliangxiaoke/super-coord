@@ -51,7 +51,7 @@ public class CoordMath {
         while (true) {
             wgsLat = (mLat + pLat) / 2;
             wgsLon = (mLon + pLon) / 2;
-            MyLatLngPoint tmp = gcj2wgs(new MyLatLngPoint(wgsLat, wgsLon));//gcj_encrypt
+            MyLatLngPoint tmp = wgs2gcj(new MyLatLngPoint(wgsLat, wgsLon));//gcj_encrypt
             dLat = tmp.getLat() - gcjLat;
             dLon = tmp.getLng() - gcjLon;
             if ((Math.abs(dLat) < threshold) && (Math.abs(dLon) < threshold))
